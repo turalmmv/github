@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #firsttext{
+       height:49px ;
+    }
+    .content{
+        display: flex;
+        
+    }
+    .secondcontent{
+        display:flex;
+        
+    }
+    .thirdcontent{
+        display: flex;
+        justify-content: center;
+    }
+    .forthcontent{
+        display: flex;
+    }
+    .fivecontent{
+        display: flex;
+    }
+    .fivebox{
+        width:1440px ;
+        height:391px ;
+        background-color: #07043B;
+    }
+    .forthbox{
+        width: 1440px;
+        height: 370px;
+        display: flex;
+        background-color: #575988;
+    }
+    .thirdbox{
+        display: flex;
+        background-color: #c5c2c2;
+        width: 1484px;
+        height: 837.87px;
+        margin-top: 20px;
+        border-top-left-radius:25% ;
+        border-top-right-radius:25% ;
+        
+    }
+
+    .secondbox{
+        background-color: #fff;
+        width: 1280px;
+        height: 474px;
+        display: flex;
+        margin-left: 45px;
+        margin-top: 50px;
+    }
+    .fyloBox{
+        width: 1280px;
+        height: 49px;
+        background-color: #BDBAFA;
+        display: flex;
+        margin-left: 45px;
+        margin-top: 50px;
+    }
+
+    .firsttext{
+        font-size: 18px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .features{
+        margin-top: 10px;
+        margin-left: 770px;
+    }
+    .signin{
+        margin-left: 100px ;
+        margin-top: 10px;
+    }
+    .team{
+        margin-left: 100px ;
+        margin-top: 10px;
+    }
+    .secondtext{
+        font-weight: bold;
+        display: flex;
+        width: 627px;
+        height: 120px;
+        font-size:40px ;
+        line-height: 60px;
+        margin-top: 30px;
+    }
+    .thirdtext{
+        font-weight: bold;
+        display: flex;
+        width: 585px;
+        height: 73px;
+        font-size:40px ;
+        line-height: 60px;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .image{
+        width: 640px;
+        height: 474px;
+        
+    }
+    #image{
+        margin-left: 11px;
+    }
+   .aaa{
+       display: flex;
+       flex-direction: column;
+   }
+   .email{
+       width:320px ;
+       height:50px ;
+       
+   }
+   .button{
+       background-color: #2f65f8;
+       width: 200px ;
+       height: 50px ;
+       margin-left: 15px;
+       
+   }
+   .inputbox{
+       display: flex;
+       flex-direction: row;
+       margin-top: 15px
+   }
+   input:invalid{
+       border-color: red;
+   }
+   input:valid{
+       border-color: blue;
+   }
+   .text3{
+    margin-left: 80px;
+    display: flex;
+   }
+   #text3{
+    color: #07043B;
+    font-weight: bold;
+    font-size: 30px;
+   }
+   .text4{
+    margin-left: 80px;
+    display: flex;
+    margin-top: 25px;
+    color: #07043B;
+   }
+   .text5{
+    margin-left: 80px;
+    display: flex;
+    margin-top: 25px;
+    color: #07043B;
+   }
+   .texts3{
+      display: flex;
+      flex-direction:column ;
+      margin-top: 178px;
+   }
+   #image2{
+       width:542px ;
+       height:409px ;
+   }
+   .image2{
+       margin-left:100px ;
+       margin-top:200px ;
+   }
+   #mark{
+       text-decoration: underline;
+       color: #71DFCC;
+       
+       margin-left:80px ;
+   }
+   .mark{
+    margin-top: 25px;
+   }
+   #image3{
+       border-radius: 50%;
+   }
+   .image3{
+       margin-left: 230px;
+       margin-top: -15px;
+   }
+   #dirnaq{
+       font-size: 25px;
+       display: flex;
+       margin-left: 15px;
+       margin-top: 18px;
+   }
+   .add{
+    margin-top: 420px;
+       margin-left: -1093px;
+       display: flex;
+       width:356px ;
+       height:215px ;
+       background-color: #fff;
+   }
+   .text6{
+       margin-top:40px ;
+       margin-left: -12px;
+   }
+   #image4{
+     border-radius: 50%;
+     width: 32px ;
+     height: 32px;
+   }
+   .image4{
+       margin-top: 135px;
+       margin-left:-279px ;
+   }
+   .text7{
+       font-weight: bold;
+       margin-top: 135px;
+       margin-left: 5px;
+   }
+   .text8{
+       margin-top: 152px;
+       margin-left: -85px;
+   }
+   .text9{
+       
+       margin-left: 85px;
+       color: white;
+   }
+   #text9{
+       font-size: 32px;
+   }
+   .text10{
+       margin-left: 85px;
+       color: white;
+   }
+   #text10{
+    margin-top: 15px;
+   }
+   .fortext9{
+       display: flex;
+       flex-direction: column;
+       margin-top: 152px;
+   }
+   #input10{
+       width: 480px; 
+       height: 48px; 
+
+   }
+   .input10{
+       margin-left: 210px ;
+   }
+   .text11{
+       margin-left: 210px ;
+       margin-top:15px ;
+       color: white;
+   }
+   .boxx{
+    margin-top: 152px ;
+       display: flex;
+       flex-direction: column;
+   }
+   .button1{
+       width: 240px;
+       height: 48px;
+       margin-left: 211px;
+       margin-top: 15px;
+       background-color: #6c9bff;
+       border: 3px black;
+   }
+   .image5{
+       margin-top: 100px ;
+       margin-left: 100px;
+   }
+   
+   .text12{
+       color: white;
+       margin-left: 100px;
+       margin-top: 10px;
+   } 
+   .text13{
+       color: white;
+       margin-left: 100px;
+       margin-top: 10px;
+   }
+   #text14,
+   #text15,
+   #text16,
+   #text17{
+       color: white;
+       margin-left: 550px;
+       
+   } 
+   .text15{
+       margin-top: 10px;
+   }
+   .text16{
+       margin-top: 10px;
+   }
+   .text17{
+       margin-top: 10px;
+   }
+   .fortextt1{
+       margin-top: -30px;
+   }
+   
+   #text14:hover,
+   #text15:hover,
+   #text16:hover,
+   #text17:hover{
+       color: rgb(70, 12, 231);
+   } 
+   .fortext2{
+    margin-top: -103px;
+    margin-left: 850px ;
+   }
+   #text18,
+   #text19,
+   #text20{
+    color:white;
+   }
+   .text19{
+       margin-top: 10px;
+   }
+   .text20{
+       margin-top: 10px;
+   }
+   #text18:hover,
+   #text19:hover,
+   #text20:hover{
+       color: blue;
+   }
+   .fortext3{
+       margin-left: 1000px;
+       margin-top: -77px;
+       display: flex;
+       flex-direction: row;
+   }
+   .twitter{
+       margin-left: 10px;
+   }
+   .instagram{
+       margin-left: 10px;
+   }
+
+   #facebook,
+   #twitter,
+   #instagram{
+       color: white;
+   }
+   #facebook:hover,
+   #twitter:hover,
+   #instagram:hover{
+       color: blue;
+   }
+</style>
+<body>
+    <div class="content">
+    <div class="fyloBox">
+        <p class="firsttext"><img id="firsttext" src="figma5.jpg" alt=""></p>
+        <a class="features" href="">features</a>
+        <a class="team" href="">team</a>
+        <a class="signin" href="">sign in</a>
+    </div>
+     </div>
+    <div class="secondcontent">
+        <div class="secondbox">
+            <div class="aaa">
+         <div class="secondtext"> <p >All your files in one secure <br> location, accessible anywhere.</p></div>
+         <div class="thirdtex">
+             <p>Fylo stores your most important files in one secure location. Access <br> them wherever you need, share and collaborate with friends, family, <br> and co-workers.</p>
+         </div>
+         <div class="inputbox">
+         <input required class="email" type="email" placeholder="Enter your email:" name="" id="">
+         <button class="button">Get Starded</button>
+        </div>
+        </div class="image" >
+          <img id="image" src="figma1.jpg"  alt="">
+        </div>
+    </div>
+    <div class="thirdcontent">
+    <div class="thirdbox">
+        <div class="texts3">
+       <div class="text3"> <p id="text3"> Stay productive, wherever you are</p></div>
+       <div class="text4"> <p id="text4"> Never let location be an issue when accessing your files. Fylo has you <br> covered for all of your file storage needs.</p></div>
+       <div class="text5"> <p id="text5"> Securely share files and folders with friends, family and colleagues for <br> live collaboration. No email attachments required!</p> </div>
+       <div class="mark"> <a href="" id="mark"> See how Fylo works </a></div>
+       <div class="image3"><img id="image3" src="figma3.jpg" alt=""></div>
+        </div>
+        <div class="image2"><img id="image2"  src="figma2.jpg" alt=""></div>
+        <div class="add">
+            <p id="dirnaq">“</p>
+            <div class="text6"><p id="text6" >Fylo has improved our team productivity by <br> an order of magnitude. Since making the <br> switch our team has become a well-oiled <br> collaboration machine.</p></div>
+            <div class="image4"><img src="figma4.jpg" id="image4" alt=""></div>
+            <div class="text7"><p id="text7" >Kyle Burton</p></div>
+            <div class="text8"><p id="text8" >Founder & Ceo , Huddle</p></div>
+
+        </div>
+    </div>
+    </div>
+    <div class="forthcontent">
+        <div class="forthbox">
+            <div class="fortext9">
+            <div class="text9"><p id="text9"> Get early access today</p></div>
+            <div class="text10"><p id="text10">It only takes a minute to sign up and our free starter tier is <br> extremely generous. If you have any questions, our support team <br> would be happy to help you.</p></div>
+            </div>
+            <div class="boxx">
+            <div class="input10"> <input type="email" placeholder="johnappleseed#mail.com" required id="input10" name="" id=""></div>
+             <div class="text11"><p id="text11">Please check your email</p></div>
+             <button class="button1"> Get started for Free</button>
+            </div>
+        </div>
+    </div>
+    <div class="fivecontent">
+        <div class="fivebox">
+            <div class="fortextt">
+            <div class="image5"><img id="image5" src="figma5.jpg" alt=""></div>
+            <div class="text12"><p id="text12">  Phone: +1-543-123-4567</p></div>
+            <div class="text13">example@fylo.com<p id="text13"></p></div>
+        </div>
+        <div class="fortextt1">
+            <div class="text14"><a href="" id="text14">About Us</a></div>
+            <div class="text15"><a href="" id="text15">Jobs</a></div>
+            <div class="text16"><a href="" id="text16">Press</a></div>
+            <div class="text17"><a href="" id="text17">Blog</a></div>
+            
+        </div>
+        <div class="fortext2">
+            
+            <div class="text18"><a id="text18" href="">Contact Us</a></div>
+            <div class="text19"><a id="text19" href="">Terms</a></div>
+            <div class="text20"><a id="text20" href="">Privacy</a></div>
+        </div>
+        <div class="fortext3">
+        <div class="facebook"><a href="" id="facebook">F   </p></div>
+        <div class="twitter"><a href="" id="twitter">T</p></div>
+        <div class="instagram"><a href="" id="instagram">I</p></div>
+        </div>
+        </div>
+        
+    </div>
+</body>
+</html>
